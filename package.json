@@ -10,7 +10,7 @@
   "homepage": "https://github.com/eFlexor/J_boo_npm_starter#readme",
   "scripts": {
     "build": "npm run css",
-    "css-compile": "sass --style=compressed --source-map --embed-sources scss:assets/css/",
+    "css-compile": "sass --load-path=node_modules --style=compressed --source-map --embed-sources scss:assets/css/",
     "css-lint": "stylelint scss/",
     "css-prefix": "postcss --replace assets/css/starter.css --use autoprefixer --map",
     "css-purge": "purgecss --keyframes --css assets/css/starter.css --content index.html --output assets/css/",
